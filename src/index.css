@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --purple-dark: #645cff;
+  --purple-light: #a49eff;
+  --silver-body: #f9fafc;
+  --transition: all 0.2s linear;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--silver-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  letter-spacing: 1px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* NAVBAR */
+/* ======= */
+.nav-bar {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  text-transform: capitalize;
+  background-color: var(--purple-dark);
+}
+
+.logo {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.cart-icon-container {
+  position: relative;
+}
+
+.cart-items-num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple-light);
+  color: white;
+  border-radius: 50%;
+  margin: 0;
+  margin-top: -1.2em;
+  margin-right: -1em;
+  font-weight: 500;
+}
+
+.cart-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+/* CART CONTAINER */
+/* ============== */
+
+.cart-container {
+  width: 95vw;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 2em 1em;
+}
+
+.cart-title {
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.cart-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+hr {
+  margin-top: 5em;
+  color: ghostwhite;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear-cart-btn {
+  background-color: var(--purple-light);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.clear-cart-btn:hover {
+  background-color: var(--purple-dark);
+}
+
+/* CART ITEM */
+/* ========== */
+
+.phone-article {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.phone-img {
+  max-width: 100px;
+}
+
+.phone-article-content {
+  text-align: left;
+}
+
+.phone-title {
+  margin: 0;
+  font-weight: 500;
+}
+
+.phone-price {
+  margin: 0.5em 0;
+  font-size: 0.9rem;
+}
+
+.remove-phone {
+  background: none;
+  border: none;
+  color: var(--purple-dark);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-left: auto;
+}
+
+.angle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--purple-dark);
+}
+
+.angle-icon {
+  font-size: 1.3rem;
+}
+
+.phone-amount {
+  margin: 0;
+}
